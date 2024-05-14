@@ -184,10 +184,6 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
     - labelSelector:
         matchExpressions:
-        - key: "affcomponent"
-          operator: In 
-          values:
-          - "metastore"
         - key: "affname"
           operator: In 
           values:
@@ -388,10 +384,6 @@ postgresql:
         requiredDuringSchedulingIgnoredDuringExecution:
         - labelSelector:
             matchExpressions:
-            - key: "affcomponent"
-              operator: In 
-              values:
-              - "hmspostgresql"
             - key: "affname"
               operator: In 
               values:
@@ -527,10 +519,6 @@ postgresql:
         requiredDuringSchedulingIgnoredDuringExecution:
         - labelSelector:
             matchExpressions:
-            - key: "affcomponent"
-              operator: In 
-              values:
-              - "hmspostgresql"
             - key: "affname"
               operator: In 
               values:
